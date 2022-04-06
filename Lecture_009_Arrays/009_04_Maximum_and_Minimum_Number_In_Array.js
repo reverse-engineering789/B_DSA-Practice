@@ -1,14 +1,31 @@
-// let numbers =  [9,5,78,5,4,3343,6,8,7,56,1,5,6,86,6]
+// You tube COding Puzzle #1 - Find Max & Min Numbers in Array
+// 009_04_Maximum_and_Minimum_Number_In_Array
+let arr = [1, 100, 10]
 
-// console.log(Math.max(...numbers))
+let max = arr[0]
+let min = arr[0]
 
 
-// console.log(Math.min(...numbers))
+for (let i = 0; i < arr.length; i++ ){
+    if (arr[i] >= max){
+        max = arr[i]
+    }
+}
+console.log(max)
 
 
-function sum (a,b,c){
-    console.log(a+b+c)
+for (let j = 0; j < arr.length; j++ ){
+    if (arr[j] < min){
+        min = arr[j]
+    }
 }
 
-let arrVal = [1,2,3]
-sum.apply(null, arrVal)
+console.log(min)
+
+// Output:
+// 100
+// 1
+
+// //-------------------
+
+
