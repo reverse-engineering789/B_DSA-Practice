@@ -25,6 +25,8 @@ console.log(string);
 
 // // My Code: 
 
+// My Code: 
+
 // const n = 5 
 
 // let string = ''
@@ -36,3 +38,10 @@ console.log(string);
 //     string = string + '\n'
 // }
 // console.log(string)
+
+// // Output:
+// // A
+// // BB
+// // CCC
+// // DDDD
+// // EEEEE
