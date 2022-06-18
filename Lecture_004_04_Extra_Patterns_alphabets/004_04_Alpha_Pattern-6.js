@@ -15,3 +15,17 @@ console.log(string);
 // CBA
 // BA
 // A
+
+
+// const n = 5
+
+// let string = ""
+
+// for (let i = 1; i <= n; i++){
+//     for (let j = 1; j <= n-i+1; j++){
+//         string = string + String.fromCharCode((n-i-j+1) + 65)
+//     }
+//     string = string + '\n'
+// }
+
+// console.log(string)
