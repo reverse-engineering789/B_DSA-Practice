@@ -1,9 +1,9 @@
-let MKBhat = [2,3,4,5,6]
-console.log(MKBhat)
+// accessing the array:
 
 
-console.log(MKBhat[2])
-
-// Output:
-// [ 2, 3, 4, 5, 6 ]
-// 4
+const surya = [2,4,6,8,10]
+string = ''
+for (let i = 1; i <- surya; i++){
+    string = string + i
+    console.log(string)
+}
