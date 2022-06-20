@@ -10,8 +10,7 @@ for (let i = 1; i <= n; i++){
 }
 
 console.log(string)
-
-
+    
 // let n = 5; // you can take input using prompt or change the value
 // let string = "";
 // // External loop
