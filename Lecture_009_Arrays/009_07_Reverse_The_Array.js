@@ -38,21 +38,44 @@
 
 
 
-const reverseArrray = (arr) => {
-    string = ''
-   let start = 0
-   let end = arr.length-1
+// const reverseArrray = (arr) => {
+//     string = ''
+//    let start = 0
+//    let end = arr.length-1
+//     for (let i = 0; i <= arr.length-1; i++){
+//          let temp = arr[start]
+//          start = end
+//          end = temp
+//     }
+//       return arr
+// }
+
+
+// const arr1 = [1,2,3,4,5,6,7,8]
+// const arr2 = [2,4,6,8]
+
+// console.log(reverseArrray(arr1))
+// console.log(reverseArrray(arr2))
+
+
+
+
+// // --------------------------------
+
+
+
+const reverseArray = (arr) => {
+    
     for (let i = 0; i <= arr.length-1; i++){
-         let temp = start
-         start = end
-         end = temp
+        let start = 0
+    let end = arr.length - 1
+             let temp = arr[start]
+             arr[start] = arr[end]
+             arr[end] = temp
     }
-      return arr
+    return arr
 }
 
 
-const arr1 = [1,2,3,4,5,6,7,8]
-const arr2 = [2,4,6,8]
-
-console.log(reverseArrray(arr1))
-console.log(reverseArrray(arr2))
+const arr1 = [2,4,6,8,10]
+console.log(reverseArray(arr1))
