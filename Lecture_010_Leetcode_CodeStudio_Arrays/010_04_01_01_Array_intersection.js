@@ -43,8 +43,7 @@ const findIntersection = (arr1, arr2) => {
 
 
 
-const array1 = [2,4,6,8,10,20
-]
+const array1 = [2,4,6,8,10,20]
 const array2 = [2,4,5,7,11,20]
 
 findIntersection(array1, array2)
