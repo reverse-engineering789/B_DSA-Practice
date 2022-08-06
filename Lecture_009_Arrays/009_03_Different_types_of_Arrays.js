@@ -27,15 +27,27 @@
 
 
 
-const arr = ['abc', 'def', 'hij']
-let string = ''
+// const arr = ['abc', 'def', 'hij']
+// let string = ''
 
-for (let i = 0; i <= arr.length-1; i++){
-    string = string + arr[i] + ' '
+// for (let i = 0; i <= arr.length-1; i++){
+//     string = string + arr[i] + ' '
+// }
+
+// console.log (string)
+
+
+// // Output:
+// // abc def hij 
+
+
+const array = ['surya', 'soorya', 'me', 'myName']
+string = ''
+for (let i = 0; i <= array.length-1; i++){
+    string = string + array[i] + ' '
 }
 
-console.log (string)
-
+console.log(string)
 
 // Output:
-// abc def hij 
+// surya soorya me myName 
