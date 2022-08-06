@@ -65,31 +65,60 @@
 
 
 
-const findMax = (arr) => {
+// const findMax = (arr) => {
+//     let max = arr[0]
+//     for (let i = 0; i <= arr.length - 1; i++){
+//            if (arr[i] > max){
+//                max = arr[i]
+//            }
+//     }
+//     return 'max: ' + max
+// }
+
+// const findMin = (arr) => {
+//     let min = arr[0]
+//     for (let j = 0; j <= arr.length-1; j++){
+//         if (arr[j] < min){
+//             min = arr[j]
+//         }
+//     }
+//     return 'min: ' + min
+// }
+
+
+// arr1 = [1,2,6,0,3,-2,7]
+// console.log(findMax(arr1))
+// console.log(findMin(arr1))
+
+// // Output:
+// // max: 7
+// // min: -2
+
+
+// --------------------------------------------------
+
+const findMaxi = (arr) => {
     let max = arr[0]
-    for (let i = 0; i <= arr.length - 1; i++){
-           if (arr[i] > max){
-               max = arr[i]
-           }
+    for (let i = 0; i <= arr.length-1; i++){
+      if (arr[i] > max){
+        max = arr[i+1]
+      }
     }
-    return 'max: ' + max
+    return max
 }
 
-const findMin = (arr) => {
-    let min = arr[0]
-    for (let j = 0; j <= arr.length-1; j++){
-        if (arr[j] < min){
-            min = arr[j]
+const findMini = (arr) => {
+    for(let j = 0; j <= arr.length-1; j++){
+        let min = arr[0]
+        if(arr[i+1] > arr[i]) {
+            min = arr[i+1]
         }
     }
-    return 'min: ' + min
+    return min
 }
 
 
-arr1 = [1,2,6,0,3,-2,7]
-console.log(findMax(arr1))
-console.log(findMin(arr1))
+const array1 = [2,4,6,8,10]
 
-// Output:
-// max: 7
-// min: -2
+console.log(findMaxi(array1))
+console.log(findMini(array1))
