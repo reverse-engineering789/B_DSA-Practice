@@ -28,3 +28,7 @@ for (let i = 0; i <arr.length-1; i++){
 }
 
 console.log(str)
+
+
+// Output:
+// 2 4 6 8 10 
