@@ -22,29 +22,34 @@
 // Second
 // //-------------------------------------------
 
-// nested switch statements 
+// // nested switch statements 
 
-let num = 'A'
+// let num = 'A'
 
-switch (num){
-    case 1: 
-       console.log('First')
-       break;
+// switch (num){
+//     case 1: 
+//        console.log('First')
+//        break;
     
-    case 'A': switch (num){
-        case 'A': console.log('value of num is: ' + num)
-        break;
-    }
-    break; 
+//     case 'A': switch (num){
+//         case 'A': console.log('value of num is: ' + num)
+//         break;
+//     }
+//     break; 
     
-    case 3:
-        console.log('three')
-        break;
+//     case 3:
+//         console.log('three')
+//         break;
     
-    default:
-        console.log('Its a default case')
+//     default:
+//         console.log('Its a default case')
     
-    }
+//     }
 
-// Output:
-// value of num is: A
+// // Output:
+// // value of num is: A
+
+
+
+
+ // //-------------------------------------------
