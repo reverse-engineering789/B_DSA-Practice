@@ -1,18 +1,14 @@
 
-
-const PrimeOrNot = (n) => {
-    for (let i = 2; i <= n; i++){
-        if (n % i === 0){
-            return 0
+const PrimeOrNot = (number) => {
+    for (let i = 0; i < number; i++) {
+        if (n % i === 0) {
+           return `is a prime number`
         }
-    }
-    return 1
+        }
+        return `is a prime number`
 }
 
-const number = 4
-if (PrimeOrNot(number) === 0){
-    console.log(`Not a Prime`)
-}else{
-    console.log(`Is Prime`)
-}
+const n = 12
+console.log(PrimeOrNot(n))
+
 
