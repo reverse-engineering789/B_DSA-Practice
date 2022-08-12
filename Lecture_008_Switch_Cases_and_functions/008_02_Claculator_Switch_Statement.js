@@ -29,29 +29,53 @@
 
 
 
-// Calculator:
+// // Calculator:
 
-const fNum = 1
-const sNum = 2
-const sign = '/'
+// const fNum = 1
+// const sNum = 2
+// const sign = '/'
 
-switch(sign) {
+// switch(sign) {
+//    case '+':
+//         console.log(`result: ${fNum + sNum}`)
+//         break
+//     case '-':
+//         console.log(`result: ${fNum - sNum}`)
+//         break
+//    case '*':
+//         console.log(`result: ${fNum * sNum}`)
+//         break
+//    case '/':
+//         console.log(`result: ${(fNum / sNum)}`)
+//         break
+//     default:
+//         console.log('Invalid Input')
+// }  
+
+
+// // Output:
+// // 0.5
+
+//-------------------------------------------------------------
+// 12/8
+const n1 = 6;
+const n2 = 2;
+const operator = '*'
+
+
+switch(operator){
    case '+':
-        console.log(`result: ${fNum + sNum}`)
-        break
-    case '-':
-        console.log(`result: ${fNum - sNum}`)
-        break
+     console.log(`${n1} + ${n2} = ${n1 + n2}`)
+     break;
+   case '-':
+        console.log(`${n1} - ${n2} = ${n1 - n2}`)
+        break;
    case '*':
-        console.log(`result: ${fNum * sNum}`)
-        break
-   case '/':
-        console.log(`result: ${(fNum / sNum)}`)
-        break
-    default:
-        console.log('Invalid Input')
-}  
+        console.log(`${n1} * ${n2} = ${n1 * n2}`)
+        break;
+   case '+':
+     console.log(`${n1} / ${n2} = ${n1 / n2}`)
+     default:
+     console.log('Error')
 
-
-// Output:
-// 0.5
+}
