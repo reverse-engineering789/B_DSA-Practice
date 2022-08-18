@@ -44,16 +44,30 @@
 
 
 
+// const array = [2,4,6,8,10]
+
+// string = ''
+// for (let i = 0; i<= array.length-1; i++){
+//     string = string + array[i] + ' '
+// }
+
+// console.log(string)
+
+
+
+// // Output:
+// // 2 4 6 8 10 
+
+
+// // -----------------------------------------------
+
+
+
 const array = [2,4,6,8,10]
 
-string = ''
-for (let i = 0; i<= array.length-1; i++){
-    string = string + array[i] + ' '
+let string = ''
+for (let i = 0; i <= array.length-1; i++){
+       string = string + array[i] + ' '
 }
 
 console.log(string)
-
-
-
-// Output:
-// 2 4 6 8 10 
