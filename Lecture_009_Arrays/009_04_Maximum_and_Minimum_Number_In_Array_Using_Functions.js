@@ -129,3 +129,36 @@
 
 
 
+const findMin = (arr) => {
+    let min = arr[0]
+    for (let i = 0; i <= arr.length - 1; i++) {
+       
+        if (arr[i] < min) {
+            min = arr[i]
+        }
+    }
+    return `minimum element is: ${min}`
+}
+
+const findMax = (arr) => {
+    let max = arr[0]
+    for (let j = 0; j <= arr.length - 1; j++) {
+        
+        if (arr[j] > max) {
+            max = arr[j]
+        }
+    }
+    return `maximum element is: ${max}`
+}
+
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(findMax(array))
+console.log(findMin(array))
+
+
+
+// Output:
+// maximum element is: 10
+// minimum element is: 1
