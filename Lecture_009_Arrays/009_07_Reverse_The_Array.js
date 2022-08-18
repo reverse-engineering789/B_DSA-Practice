@@ -1,37 +1,73 @@
-// const reverse = (arr) => {
-//      let i = 0
-//      let j = arr.length - 1
+
+const reverseArray = (arr) => {
+    let start = 0
+    let end = arr.length-1
+
+    let temp = arr[start]
+    arr[start] = arr[end]
+    arr[end] = temp
+
+    start ++
+    end--
+}
+
+const printArray = (arr) => {
+    let emptyArr = []
+    for (let i =0; i <= arr.length-1; i++){
+         emptyArr.push(arr[i])
+    }
+    console.log(`reversed array: ${emptyArr}`)
+}
+
+
+const array = [2,4,6,8]
+console.log(`original array: ${array}`)
+reverseArray(array)
+printArray(array)
+
+// Output:
+// original array: 2,4,6,8
+// reversed array: 8,4,6,2
+
+
+
+// ----------------------------------------------------------
+// LB code:
+
+const reverse = (arr) => {
+     let i = 0
+     let j = arr.length - 1
      
-//      while (i <= j){
-//      let temp = arr[i]
-//      arr[i] = arr[j]
-//      arr[j] = temp
-//      i++
-//      j--
-//            }
-//     }
+     while (i <= j){
+     let temp = arr[i]
+     arr[i] = arr[j]
+     arr[j] = temp
+     i++
+     j--
+           }
+    }
 
-// let printArray = (arr) => {
-//     for (let i = 0; i < arr.length; i++){
-//         console.log(arr[i])
-//     }
-// }
+let printArray1 = (arr) => {
+    for (let i = 0; i < arr.length; i++){
+        console.log(arr[i])
+    }
+}
 
-// const array = [2,4,6,8,10]
-// console.log('Original array: ' + array)
+const array1 = [2,4,6,8,10]
+console.log('Original array: ' + array1)
 
-// reverse(array)
-// console.log('reversed array:')
-// printArray(array)
+reverse(array1)
+console.log('reversed array:')
+printArray1(array1)
 
-// // Output:
-// // Original array: 2,4,6,8,10
-// // reversed array:
-// // 10
-// // 8
-// // 6
-// // 4
-// // 2
+// Output:
+// Original array: 2,4,6,8,10
+// reversed array:
+// 10
+// 8
+// 6
+// 4
+// 2
 
 
 // // --------------------------------
@@ -149,44 +185,6 @@
 // =================================================================
 
 
-
-
-const reverse = (arr) => {
-    let start = 0
-    let end = arr.length-1
-
-    while (start < end){
-        let temp = start 
-        start = end 
-        end = temp
-        start++
-        end--
-    }
-}
-
- let printArray = (arr) => {
-    // let pushHere = []
-    for (let i = 0; i < arr.length; i++){
-        console.log(arr[i])
-    }
-    // console.log(pushHere)
- }
-
- const array = [2,4,6,8,10]
-console.log('Original array: ' + array)
-
-reverse(array)
-console.log('reversed array:')
-printArray(array)
-
-
-// const array = [2,4,6,8,10]
-// console.log(`original array: ${array}`)
-// reverse(array)
-// console.log(`reversed array: ${printArray(array)}`)
-
-
-
 // // --------------------------------------------------------
 
 
@@ -216,3 +214,12 @@ printArray(array)
 // reverse(array)
 // console.log('reversed array:')
 // printArray(array)
+
+
+
+// ----------------------------------------------------------------
+
+
+
+
+
