@@ -1,31 +1,31 @@
 
 
-const pairSum = (arr, sum) => {
-    let   count = 0
-    let sumToatal = []
-         for (let i = 0; i <= arr.length-1; i++){
-             for (let j = i+1; j <= arr.length-1; j++){
-                 if (arr[i] + arr[j] === sum){
-                     sumToatal.push(arr[i], arr[j])
-                       count++ 
-                   console.log("(" + arr[i] + ", " + arr[j] + ")" );
-                 }
-             }
-         }
-         return count
-      }
+// const pairSum = (arr, sum) => {
+//     let   count = 0
+//     let sumToatal = []
+//          for (let i = 0; i <= arr.length-1; i++){
+//              for (let j = i+1; j <= arr.length-1; j++){
+//                  if (arr[i] + arr[j] === sum){
+//                      sumToatal.push(arr[i], arr[j])
+//                        count++ 
+//                    console.log("(" + arr[i] + ", " + arr[j] + ")" );
+//                  }
+//              }
+//          }
+//          return count
+//       }
   
       
   
-  const number = 6
-  const array = [1,2,4,5,6,3]
-  console.log(pairSum(array, number))
+//   const number = 6
+//   const array = [1,2,4,5,6,3]
+//   console.log(pairSum(array, number))
   
   
-// // Output:
-// (1, 5)
-// (2, 4)
-// 2
+// // // Output:
+// // (1, 5)
+// // (2, 4)
+// // 2
 
 
 
@@ -58,3 +58,27 @@ const pairSum = (arr, sum) => {
 // 	let n = arr.length;
 // 	let sum = 6;
 // 	printPairs(arr, n, sum);
+
+
+
+// // --------------------------------------------------
+
+
+const pairSum = (arr , number) => {
+     for (let i = 0; i <= arr.length-1; i++){
+          for (let j = i+1; j <= arr.length-1; j++){
+               if (arr[i] + arr[j] === number){
+                     console.log(`(${arr[i]}, ${arr[j]})`)
+               }
+          }
+     }
+}
+
+
+  const number1 = 6
+  const array1 = [1,2,4,5,6,3]
+  pairSum(array1, number1)
+  
+//   Output:
+//   (1, 5)
+// (2, 4)
