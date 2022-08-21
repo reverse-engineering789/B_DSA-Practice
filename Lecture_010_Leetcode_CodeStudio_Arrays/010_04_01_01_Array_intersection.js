@@ -29,24 +29,75 @@
 // // ---------------------------------------
 
 
-const findIntersection = (arr1, arr2) => {
-      interSection = []
-      for (let i = 0; i <= arr1.length-1; i++){
-        for (let j = 0; j <= arr2.length-1; j++){
-                if (arr1[i] === arr2[j]){
-                     interSection.push(arr1[i])
-                }
-        }
-      }
-      console.log(interSection)
-}
+// const findIntersection = (arr1, arr2) => {
+//       interSection = []
+//       for (let i = 0; i <= arr1.length-1; i++){
+//         for (let j = 0; j <= arr2.length-1; j++){
+//                 if (arr1[i] === arr2[j]){
+//                      interSection.push(arr1[i])
+//                 }
+//         }
+//       }
+//       console.log(interSection)
+// }
 
+
+
+// const array1 = [2,4,6,8,10,20]
+// const array2 = [2,4,5,7,11,20]
+
+// findIntersection(array1, array2)
+
+
+// // Output:
+// // [ 2, 4, 20 ]
+
+
+
+///--------------------------------------------------------------
+
+
+// const interSection = (arr1, arr2) => {
+//  let array = []
+//   for (let i = 0; i <= arr1.length-1; i++){
+//     for (let j = 0; j <= arr2.length-1; j++){
+//             if (arr1[i] === arr2[j]){
+//               array.push(arr1[i])
+//             }
+//     }
+//   }
+//   console.log(array)
+// }
+
+// const array1 = [2,4,6,8,10,20]
+// const array2 = [2,4,5,7,11,20]
+
+// interSection(array1, array2)
+
+
+// // Output:
+// // [ 2, 4, 20 ]
+
+///--------------------------------------------------------------
+// 21-8
+
+const interSection = (arr1, arr2) => {
+  let array = []
+  for (let i = 0; i <= arr1.length-1; i++){
+    for (let j = 0; j <= arr2.length-1; j++){
+        if (arr1[i] === arr2[j]){
+            array.push(arr1[i])
+        }
+    }
+  }
+  console.log(array)
+}
 
 
 const array1 = [2,4,6,8,10,20]
 const array2 = [2,4,5,7,11,20]
 
-findIntersection(array1, array2)
+interSection(array1, array2)
 
 
 // Output:
