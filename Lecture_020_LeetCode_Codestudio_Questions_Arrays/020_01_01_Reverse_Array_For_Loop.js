@@ -1,48 +1,46 @@
-const reverse1 = (v) => {
-    for (let i = v.length-1; i >= 0; i-- ){
-           console.log(v[i])
+
+
+const reverse = (arr) => {
+    let array = []
+    for (let i = arr.length-1; i >= 0; i--){
+            array.push(arr[i])
     }
+    console.log(array)
 }
 
-const v2 = [11,7,3,12,4]
-reverse1(v2)
-// // Output:
-// // 4
-// // 12
-// // 3
-// // 7
-// // 11
+const array1 = [2,4,6,8,10]
+reverse(array1)
 
 
-// // -----------------------------------------------------
+// // // -----------------------------------------------------
 
 
-const reverse = (v) => {
-     let s = 0
-     let l = v.length-1
+// const reverse = (v) => {
+//      let s = 0
+//      let l = v.length-1
 
-     while ( s < l){
-         let temp = v[s]
-         v[s] = v[l]
-         v[l] = temp
-         s++
-         l--
-     }
-     return v
-}
+//      while ( s < l){
+//          let temp = v[s]
+//          v[s] = v[l]
+//          v[l] = temp
+//          s++
+//          l--
+//      }
+//      return v
+// }
 
-const print = (v) =>  {
-       for (let i = 0; i < v.length-1; i++){
-           console.log(v[i])
-       }
-}
-const v1 = [11,7,3,12,4]
-reverse(v1)
-print(v1)
+// const print = (v) =>  {
+//        for (let i = 0; i < v.length-1; i++){
+//            console.log(v[i])
+//        }
+// }
+// const v1 = [11,7,3,12,4]
+// reverse(v1)
+// print(v1)
 
 
 
-// // -----------------------------------------------------
+// // // -----------------------------------------------------
 
 
 
@@ -85,3 +83,7 @@ print(v1)
 
 // // reverseArray(array2)
 // // printArray(array2)
+
+
+// // -------------------------------------------------------------
+
