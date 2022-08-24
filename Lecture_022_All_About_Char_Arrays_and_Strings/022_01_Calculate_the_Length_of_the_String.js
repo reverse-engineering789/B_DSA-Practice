@@ -13,16 +13,32 @@
 // -------------------------------------------------------------
 
 
-const calculateLength = (str) => {
+// const calculateLength = (str) => {
+//     let count = 0
+//     for (let i = 0; i <= str.length-1; i++){
+//         count++
+//     }
+//     return count
+// }
+
+// console.log(calculateLength('Surya'))
+
+
+// // Output:
+// // 5
+
+
+// // --------------------------------------------------
+
+const CalLength = (n) => {
     let count = 0
-    for (let i = 0; i <= str.length-1; i++){
-        count++
+    for (let i = 0; i <= n.length-1; i++){
+         count++
     }
-    return count
+    console.log(count)
 }
-
-console.log(calculateLength('Surya'))
-
+const name = 'Surya'
+CalLength(name)
 
 // Output:
 // 5
