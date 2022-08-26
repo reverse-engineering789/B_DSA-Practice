@@ -62,3 +62,10 @@ let test2 = [3,4,5,1]
 let test3 = [0,8,10,5,2]
 
 console.log(findPeak(test1))
+console.log(findPeak(test2))
+console.log(findPeak(test3))
+
+// Output:
+// 5
+// 2
+// 2
