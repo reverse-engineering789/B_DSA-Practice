@@ -54,6 +54,8 @@ let LastOcc = (arr, key) => {
 
 
 let even = [1,2,3,3,3,3,3,3,3,3,3,3,5]
+console.log(firstOcc(even, 3))
+console.log(LastOcc(even, 3))
 const firstOccurece =  firstOcc(even, 3)
 const LastOccurece =  LastOcc(even, 3)
 
@@ -62,7 +64,10 @@ console.log(totalOccurece)
 
 
 // // Output:
+// // 2
+// // 11
 // // 10
+
 
 
 
